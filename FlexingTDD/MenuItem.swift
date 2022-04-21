@@ -9,5 +9,12 @@ import Foundation
 
 struct MenuItem {
 
-    let title = "Margherita"
+    let title: String
+}
+
+extension MenuItem {
+
+    init(pizza: Pizza) {
+        self.init(title: pizza.name)
+    }
 }

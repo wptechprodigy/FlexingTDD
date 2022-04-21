@@ -24,6 +24,6 @@ struct MenuDataSource {
         }
 
     func item(forRow row: Int, inSection section: Int) -> MenuItem {
-        return MenuItem()
+        return MenuItem(pizza: pizzas[row])
     }
 }
