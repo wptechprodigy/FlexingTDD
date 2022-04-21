@@ -15,4 +15,10 @@ final class MenuDataSourceTests: XCTestCase {
 
         XCTAssertEqual(dataSource.numberOfSections, 1)
     }
+
+    func test_numberOfRowInSection() {
+        let dataSource = MenuDataSource()
+
+        XCTAssertEqual(dataSource.numberOfRows(inSection: 0), 3)
+    }
 }
