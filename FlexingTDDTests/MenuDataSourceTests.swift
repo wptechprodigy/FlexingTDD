@@ -26,4 +26,16 @@ final class MenuDataSourceTests: XCTestCase {
 
         XCTAssertEqual(dataSource.numberOfRows(inSection: 0), 3)
     }
+
+    func test_numberOfRows_inOutOfBoundsSection_isZero() {
+        let samplePizzas: [Pizza] = [
+            Pizza(),
+            Pizza(),
+            Pizza()
+        ]
+        let dataSource = MenuDataSource(pizzas: samplePizzas)
+
+        XCTAssertEqual(dataSource.numberOfRows(inSection: 1), 0)
+        XCTAssertEqual(dataSource.numberOfRows(inSection: -1), 0)
+    }
 }
