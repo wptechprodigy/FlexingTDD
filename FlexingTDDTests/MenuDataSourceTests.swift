@@ -38,4 +38,15 @@ final class MenuDataSourceTests: XCTestCase {
         XCTAssertEqual(dataSource.numberOfRows(inSection: 1), 0)
         XCTAssertEqual(dataSource.numberOfRows(inSection: -1), 0)
     }
+
+    func test_expectedItem_atARowAndSection() {
+        let samplePizzas: [Pizza] = [
+            Pizza(),
+            Pizza(),
+            Pizza()
+        ]
+        let dataSource = MenuDataSource(pizzas: samplePizzas)
+
+        XCTAssertEqual(dataSource.item(forRow: 0, inSection: 0).title, "Margherita")
+    }
 }

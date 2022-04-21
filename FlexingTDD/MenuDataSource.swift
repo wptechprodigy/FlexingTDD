@@ -22,4 +22,8 @@ struct MenuDataSource {
             guard section == 0 else { return 0 }
             return pizzas.count
         }
+
+    func item(forRow row: Int, inSection section: Int) -> MenuItem {
+        return MenuItem()
+    }
 }
