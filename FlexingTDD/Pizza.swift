@@ -7,4 +7,7 @@
 
 import Foundation
 
-struct Pizza {}
+struct Pizza {
+
+    let name: String
+}

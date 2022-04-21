@@ -10,7 +10,7 @@ import Foundation
 
 extension Pizza {
 
-    static func fixture() -> Pizza {
-        return Pizza()
+    static func fixture(name: String = "Margherita") -> Pizza {
+        return Pizza(name: name)
     }
 }

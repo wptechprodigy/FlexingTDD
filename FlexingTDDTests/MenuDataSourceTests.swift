@@ -41,8 +41,8 @@ final class MenuDataSourceTests: XCTestCase {
 
     func test_expectedItem_atARowAndSection() {
         let samplePizzas: [Pizza] = [
-            .fixture(),
-            .fixture()
+            .fixture(name: "Margherita"),
+            .fixture(name: "Capricciosa")
         ]
         let dataSource = MenuDataSource(pizzas: samplePizzas)
 
