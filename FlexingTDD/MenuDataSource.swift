@@ -19,6 +19,6 @@ struct MenuDataSource {
 
     func numberOfRows(
         inSection section: Int) -> Int {
-        return 3
+        return pizzas.count
     }
 }
