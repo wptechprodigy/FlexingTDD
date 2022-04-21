@@ -11,13 +11,18 @@ import XCTest
 final class MenuDataSourceTests: XCTestCase {
 
     func test_has_oneSection() {
-        let dataSource = MenuDataSource()
+        let dataSource = MenuDataSource(pizzas: [Pizza()])
 
         XCTAssertEqual(dataSource.numberOfSections, 1)
     }
 
     func test_numberOfRowInSection() {
-        let dataSource = MenuDataSource()
+        let samplePizzas: [Pizza] = [
+            Pizza(),
+            Pizza(),
+            Pizza()
+        ]
+        let dataSource = MenuDataSource(pizzas: samplePizzas)
 
         XCTAssertEqual(dataSource.numberOfRows(inSection: 0), 3)
     }

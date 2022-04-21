@@ -15,6 +15,7 @@
 		04ECD06D2811BB92008F67B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECD06B2811BB92008F67B7 /* LaunchScreen.storyboard */; };
 		04ECD0842811BC5B008F67B7 /* MenuDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD0832811BC5B008F67B7 /* MenuDataSourceTests.swift */; };
 		04ECD0862811E868008F67B7 /* MenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD0852811E868008F67B7 /* MenuDataSource.swift */; };
+		04ECD08828120BF2008F67B7 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD08728120BF2008F67B7 /* Pizza.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		04ECD0782811BBB5008F67B7 /* FlexingTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexingTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ECD0832811BC5B008F67B7 /* MenuDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDataSourceTests.swift; sourceTree = "<group>"; };
 		04ECD0852811E868008F67B7 /* MenuDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDataSource.swift; sourceTree = "<group>"; };
+		04ECD08728120BF2008F67B7 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				04ECD06B2811BB92008F67B7 /* LaunchScreen.storyboard */,
 				04ECD06E2811BB92008F67B7 /* Info.plist */,
 				04ECD0852811E868008F67B7 /* MenuDataSource.swift */,
+				04ECD08728120BF2008F67B7 /* Pizza.swift */,
 			);
 			path = FlexingTDD;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				04ECD0652811BB8E008F67B7 /* ViewController.swift in Sources */,
 				04ECD0612811BB8E008F67B7 /* AppDelegate.swift in Sources */,
 				04ECD0632811BB8E008F67B7 /* SceneDelegate.swift in Sources */,
+				04ECD08828120BF2008F67B7 /* Pizza.swift in Sources */,
 				04ECD0862811E868008F67B7 /* MenuDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

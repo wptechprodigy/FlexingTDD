@@ -9,7 +9,13 @@ import Foundation
 
 struct MenuDataSource {
 
+    let pizzas: [Pizza]
+
     let numberOfSections = 1
+
+    init(pizzas: [Pizza]) {
+        self.pizzas = pizzas
+    }
 
     func numberOfRows(
         inSection section: Int) -> Int {
