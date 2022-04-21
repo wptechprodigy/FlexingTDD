@@ -17,6 +17,7 @@
 		04ECD0862811E868008F67B7 /* MenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD0852811E868008F67B7 /* MenuDataSource.swift */; };
 		04ECD08828120BF2008F67B7 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD08728120BF2008F67B7 /* Pizza.swift */; };
 		04ECD08A281214ED008F67B7 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD089281214ED008F67B7 /* MenuItem.swift */; };
+		04ECD08D28121638008F67B7 /* Pizza+FixtureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD08C28121638008F67B7 /* Pizza+FixtureExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		04ECD0852811E868008F67B7 /* MenuDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDataSource.swift; sourceTree = "<group>"; };
 		04ECD08728120BF2008F67B7 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		04ECD089281214ED008F67B7 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		04ECD08C28121638008F67B7 /* Pizza+FixtureExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pizza+FixtureExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,18 @@
 		04ECD0792811BBB5008F67B7 /* FlexingTDDTests */ = {
 			isa = PBXGroup;
 			children = (
+				04ECD08B28121608008F67B7 /* Fixtures */,
 				04ECD0832811BC5B008F67B7 /* MenuDataSourceTests.swift */,
 			);
 			path = FlexingTDDTests;
+			sourceTree = "<group>";
+		};
+		04ECD08B28121608008F67B7 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				04ECD08C28121638008F67B7 /* Pizza+FixtureExtension.swift */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ECD08D28121638008F67B7 /* Pizza+FixtureExtension.swift in Sources */,
 				04ECD0842811BC5B008F67B7 /* MenuDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,16 +11,16 @@ import XCTest
 final class MenuDataSourceTests: XCTestCase {
 
     func test_has_oneSection() {
-        let dataSource = MenuDataSource(pizzas: [Pizza()])
+        let dataSource = MenuDataSource(pizzas: [.fixture()])
 
         XCTAssertEqual(dataSource.numberOfSections, 1)
     }
 
     func test_numberOfRowInSection() {
         let samplePizzas: [Pizza] = [
-            Pizza(),
-            Pizza(),
-            Pizza()
+            .fixture(),
+            .fixture(),
+            .fixture()
         ]
         let dataSource = MenuDataSource(pizzas: samplePizzas)
 
@@ -29,9 +29,9 @@ final class MenuDataSourceTests: XCTestCase {
 
     func test_numberOfRows_inOutOfBoundsSection_isZero() {
         let samplePizzas: [Pizza] = [
-            Pizza(),
-            Pizza(),
-            Pizza()
+            .fixture(),
+            .fixture(),
+            .fixture()
         ]
         let dataSource = MenuDataSource(pizzas: samplePizzas)
 
@@ -41,9 +41,8 @@ final class MenuDataSourceTests: XCTestCase {
 
     func test_expectedItem_atARowAndSection() {
         let samplePizzas: [Pizza] = [
-            Pizza(),
-            Pizza(),
-            Pizza()
+            .fixture(),
+            .fixture()
         ]
         let dataSource = MenuDataSource(pizzas: samplePizzas)
 
