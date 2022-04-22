@@ -46,7 +46,20 @@ final class MenuDataSourceTests: XCTestCase {
         ]
         let dataSource = MenuDataSource(pizzas: samplePizzas)
 
-        XCTAssertEqual(dataSource.item(forRow: 0, inSection: 0).title, "Margherita")
-        XCTAssertEqual(dataSource.item(forRow: 1, inSection: 0).title, "Capricciosa")
+        XCTAssertEqual(dataSource.item(forRow: 0, inSection: 0)?.title, "Margherita")
+        XCTAssertEqual(dataSource.item(forRow: 1, inSection: 0)?.title, "Capricciosa")
+    }
+
+    func test_item_outOfBoundsRowAndSection_isNil() {
+        let samplePizzas: [Pizza] = [
+            .fixture(name: "Margherita"),
+            .fixture(name: "Capricciosa")
+        ]
+        let dataSource = MenuDataSource(pizzas: samplePizzas)
+
+        XCTAssertNil(dataSource.item(forRow: 2, inSection: 0))
+        XCTAssertNil(dataSource.item(forRow: 0, inSection: 1))
+        XCTAssertNil(dataSource.item(forRow: 2, inSection: 1))
+        XCTAssertNil(dataSource.item(forRow: -1, inSection: -1))
     }
 }
