@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		04ECD0612811BB8E008F67B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD0602811BB8E008F67B7 /* AppDelegate.swift */; };
 		04ECD0632811BB8E008F67B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD0622811BB8E008F67B7 /* SceneDelegate.swift */; };
-		04ECD0652811BB8E008F67B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD0642811BB8E008F67B7 /* ViewController.swift */; };
+		04ECD0652811BB8E008F67B7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECD0642811BB8E008F67B7 /* MenuViewController.swift */; };
 		04ECD0682811BB8E008F67B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECD0662811BB8E008F67B7 /* Main.storyboard */; };
 		04ECD06A2811BB92008F67B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ECD0692811BB92008F67B7 /* Assets.xcassets */; };
 		04ECD06D2811BB92008F67B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECD06B2811BB92008F67B7 /* LaunchScreen.storyboard */; };
@@ -34,7 +34,7 @@
 		04ECD05D2811BB8E008F67B7 /* FlexingTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexingTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ECD0602811BB8E008F67B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ECD0622811BB8E008F67B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04ECD0642811BB8E008F67B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04ECD0642811BB8E008F67B7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		04ECD0672811BB8E008F67B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04ECD0692811BB92008F67B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04ECD06C2811BB92008F67B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 			children = (
 				04ECD0602811BB8E008F67B7 /* AppDelegate.swift */,
 				04ECD0622811BB8E008F67B7 /* SceneDelegate.swift */,
-				04ECD0642811BB8E008F67B7 /* ViewController.swift */,
+				04ECD0642811BB8E008F67B7 /* MenuViewController.swift */,
 				04ECD0662811BB8E008F67B7 /* Main.storyboard */,
 				04ECD0692811BB92008F67B7 /* Assets.xcassets */,
 				04ECD06B2811BB92008F67B7 /* LaunchScreen.storyboard */,
@@ -127,6 +127,7 @@
 				04ECD0592811BB8E008F67B7 /* Sources */,
 				04ECD05A2811BB8E008F67B7 /* Frameworks */,
 				04ECD05B2811BB8E008F67B7 /* Resources */,
+				04994CF82819439F006AEF90 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -214,12 +215,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04994CF82819439F006AEF90 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04ECD0592811BB8E008F67B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04ECD0652811BB8E008F67B7 /* ViewController.swift in Sources */,
+				04ECD0652811BB8E008F67B7 /* MenuViewController.swift in Sources */,
 				04ECD0612811BB8E008F67B7 /* AppDelegate.swift in Sources */,
 				04ECD0632811BB8E008F67B7 /* SceneDelegate.swift in Sources */,
 				04ECD08A281214ED008F67B7 /* MenuItem.swift in Sources */,

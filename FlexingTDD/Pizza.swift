@@ -11,3 +11,14 @@ struct Pizza {
 
     let name: String
 }
+
+extension Pizza {
+
+    static func loadPizzas() -> [Pizza] {
+        return [
+            .init(name: "Margherita"),
+            .init(name: "Alata"),
+            .init(name: "Oni'yo")
+        ]
+    }
+}
