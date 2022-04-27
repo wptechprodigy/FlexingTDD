@@ -16,7 +16,6 @@ class MenuViewController: UIViewController {
         let tableView = UITableView()
         tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: "MenuViewCell")
-        
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
